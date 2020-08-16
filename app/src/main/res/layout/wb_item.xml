@@ -16,7 +16,7 @@
             <TextView
                 android:id="@+id/name"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="@dimen/dp_40"
                 android:layout_centerHorizontal="true" />
         </RelativeLayout>
     </androidx.cardview.widget.CardView>

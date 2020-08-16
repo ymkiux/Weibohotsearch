@@ -3,6 +3,7 @@ package wooyun.weibohotsearch.bean;
 public class WBbean {
 
     private String name;
+    private String url;
 
     public String getUrl() {
         return url;
@@ -12,7 +13,6 @@ public class WBbean {
         this.url = url;
     }
 
-    private String url;
 
     public String getName() {
         return name;

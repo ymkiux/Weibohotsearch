@@ -67,6 +67,7 @@ class MainActivity : AppCompatActivity() {
                     R.id.name -> {
                         val title = Intent(this@MainActivity, WebviewActivity::class.java)
                         title.putExtra("link", (adapter.getItem(position) as WBbean?)!!.url)
+                        title.putExtra("title", (adapter.getItem(position) as WBbean?)!!.name)
                         startActivity(title)
                     }
                 }
@@ -117,9 +118,9 @@ class MainActivity : AppCompatActivity() {
             val elements2 = elements1.select("tr")
             for (element in elements2) {
                 val bean = WBbean()
-                bean.name = element.select("td.td-02").text()
+                bean.name = element.select("a").text()
                 bean.url = element.select("a").attr("abs:href")
-                var a = element.select("a").attr("abs:href")
+                var a = element.select("a").text()
                 if (a != null) {
                     Log.d("测试", "updateUI: $a")
                 }

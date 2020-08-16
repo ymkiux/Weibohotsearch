@@ -9,5 +9,6 @@ import wooyun.weibohotsearch.bean.WBbean
 class WbAdapter(private val context: Context) : BaseQuickAdapter<WBbean, BaseViewHolder>(R.layout.wb_item) {
     override fun convert(helper: BaseViewHolder, item: WBbean) {
         helper.setText(R.id.name, item.name)
+                .addOnClickListener(R.id.name)
     }
 }

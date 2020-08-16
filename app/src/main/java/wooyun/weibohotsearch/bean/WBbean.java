@@ -4,9 +4,17 @@ public class WBbean {
 
     private String name;
 
+    public String getUrl() {
+        return url;
+    }
 
+    public void setUrl(String url) {
+        this.url = url;
+    }
 
-    public  String getName() {
+    private String url;
+
+    public String getName() {
         return name;
     }
 

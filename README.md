@@ -3,6 +3,7 @@
 #### 添加依赖 ####
 
     implementation 'org.jsoup:jsoup:1.9.2'
+    implementation 'com.melnykov:floatingactionbutton:1.3.0'
     implementation group: 'com.github.CymChad', name: 'BaseRecyclerViewAdapterHelper', version: '2.9.34'
     implementation group: 'androidx.swiperefreshlayout', name: 'swiperefreshlayout', version: '1.2.0-alpha01'
 
